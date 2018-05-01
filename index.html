@@ -29,7 +29,7 @@
 						<li><a href="#one" class="active">Über</a></li>
 						<li><a href="#two">Bestellen</a></li>
 						<li><a href="#three">Blog</a></li>
-						<li><a href="#four">Beispiele</a></li>
+						<li><a href="#four">Beispiele und Errata</a></li>
 					</ul>
 				</nav>
 				<footer>
@@ -100,10 +100,14 @@
 							
 							<section id="four">
 								<div class="container">
-									<h3>Beispiele</h3>
+									<h3>Beispiele und Errata</h3>
 									<p>Sie finden alle Beispiele des Buches im GitHub-Repository des Spring-Boot-Buches:</p>
 									<p><a href="https://github.com/springbootbuch">github.com/springbootbuch</a></p>
 									<p>Die Beispiele werden von <a href="https://travis-ci.org">Travis CI</a> kontinuierlich gebaut, so dass sicher gestellt ist, dass Sie mit validem Code arbeiten. Die Beispiele werden im Buch ausführlich besprochen.</p>
+									
+									<h4>Errata</h4>
+									<h5>17.2.2., Seite 347</h5>
+									<p>Die Basis-URL der Endpunkte wird über <code>management.endpoints.web.base-path</code> konfiguriert, die Pfade einzelner Endpunkte über <code>management.endpoints.web.path-mapping.health=healthcheck.&lt;id&gt;</code>, der Kontext-Pfad der Actuator-Endpunkte über <code>management.server.servlet.context-path</code>.</p>
 								</div>
 							</section>
 						
