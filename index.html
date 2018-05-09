@@ -106,7 +106,22 @@
 									<p>Die Beispiele werden von <a href="https://travis-ci.org">Travis CI</a> kontinuierlich gebaut, so dass sicher gestellt ist, dass Sie mit validem Code arbeiten. Die Beispiele werden im Buch ausführlich besprochen.</p>
 									
 									<h4>Errata</h4>
-									<h5>17.2.2., Seite 347</h5>
+									
+									<h5>4.1.1, Seite 68</h5>
+									<p>Der Absatz bzgl. Default-Konfigurationsdateien ist unvollständig. Korrekt lautet er:</p>
+									<p><blockquote>
+									Der Basisname application der Konfigurationsdateien kann durch Setzen der Eigenschaft spring.config.name geändert werden. 
+									Der Aufruf des helloworld-Projektes mit <code>java -jar target/helloworld.jar --spring.config.name=foobar</code> ändert den 
+									Basisnamen der Konfigurationsdateien auf foobar, es wird nun nach foobar.properties, foobar.yml und profilspezifischen Varianten davon gesucht.
+									<br />
+									Mit <code>spring.config.location</code> kann der Suchpfad geändert und mittels <code>spring.config.additional-location</code> können 
+									zusätzliche Orte angegeben werden. Für beide Eigenschaften gilt: Enthalten sie Pfade, so wird innerhalb dieser Pfade nach 
+									Konfigurationsdateien entsprechend dem Standardnamen oder dem konfigurierten Namen gesucht, andernfalls nach Dateien wie angegeben. 
+									Profilspezifische Varianten werden nicht gesucht (siehe auch Unterabschnitt 4.2.1). Pfade innerhalb von <code>spring.config.additional-location</code>
+									 haben eine niedrigere Priorität, falls Eigenschaften mehrfach definiert sind.
+									</blockquote></p>
+
+									<h5>17.2.2, Seite 347</h5>
 									<p>Die Basis-URL der Endpunkte wird über <code>management.endpoints.web.base-path</code> konfiguriert, die Pfade einzelner Endpunkte über <code>management.endpoints.web.path-mapping.health=healthcheck.&lt;id&gt;</code>, der Kontext-Pfad der Actuator-Endpunkte über <code>management.server.servlet.context-path</code>.</p>
 								</div>
 							</section>
