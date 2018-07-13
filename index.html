@@ -126,6 +126,22 @@
 									
 									<h5>5.2.1, Seite 100</h5>
 									<p>Die Annotationen <code>@AutoConfigureBefore</code> und <code>@AutoConfigureAfter</code> setzen Ihre Autokonfiguration in Relation zu anderen und erlauben eine exakte Reihenfolge.</p>
+									
+									<h5>3.1.2, letzter Abschnitt</h5>
+									<p>
+										Hier hat sich ein inhaltlicher Dreher eingeschlichhen. Falls fachliche Komponenten wie Services-Klassen und ähnliches
+										frei von Spring-Code bleiben sollen, ist natürlich die Java-basierte Konfiguration sinnvoll. Schnittstellen, wie <code>@Controller</code>
+										und <code>@RestController</code> sind bereits so eng mit Spring-Infrastruktur verzahnt, dass sie getrost per Komponentensuche
+										in den Kontext kommen können. Hier bieten die großen IDEs auch hinreichend gute Unterstützung. Der korrigierte Text lautet:
+									</p>
+									<p>
+										<blockquote>
+											Von XML-Konfiguration wird mittlerweile abgeraten. Bewährt hat sich eine Mischung aus Java-basierter Konfiguration und Komponentensuche. 
+											Die Java-basierte Konfiguration eignet sich dabei hervorragend zur Konfiguration der fachlichen Komponenten einer Anwendung und 
+											die Komponentensuche zur Zusammenstellung der nicht fachlichen Beans beziehungsweise von Beans, die bereits sehr stark von 
+											Spring-Infrastruktur abhängen. Fachliche Aspekte können somit als POJO implementiert werden und sind frei von Spring-Code. 
+										</blockquote>
+									</p>
 								</div>
 							</section>
 						
