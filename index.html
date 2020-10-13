@@ -107,25 +107,10 @@
 									
 									<h4>Errata</h4>
 									
-									<h5>4.1.1, Seite 68</h5>
-									<p>Der Absatz bzgl. Default-Konfigurationsdateien ist unvollständig. Korrekt lautet er:</p>
-									<p><blockquote>
-									Der Basisname application der Konfigurationsdateien kann durch Setzen der Eigenschaft spring.config.name geändert werden. 
-									Der Aufruf des helloworld-Projektes mit <code>java -jar target/helloworld.jar --spring.config.name=foobar</code> ändert den 
-									Basisnamen der Konfigurationsdateien auf foobar, es wird nun nach foobar.properties, foobar.yml und profilspezifischen Varianten davon gesucht.
-									<br />
-									Mit <code>spring.config.location</code> kann der Suchpfad geändert und mittels <code>spring.config.additional-location</code> können 
-									zusätzliche Orte angegeben werden. Für beide Eigenschaften gilt: Enthalten sie Pfade, so wird innerhalb dieser Pfade nach 
-									Konfigurationsdateien entsprechend dem Standardnamen oder dem konfigurierten Namen gesucht, andernfalls nach Dateien wie angegeben. 
-									Profilspezifische Varianten werden nicht gesucht (siehe auch Unterabschnitt 4.2.1). Pfade innerhalb von <code>spring.config.additional-location</code>
-									 haben eine niedrigere Priorität, falls Eigenschaften mehrfach definiert sind.
-									</blockquote></p>
-
-									<h5>17.2.2, Seite 347</h5>
-									<p>Die Basis-URL der Endpunkte wird über <code>management.endpoints.web.base-path</code> konfiguriert, die Pfade einzelner Endpunkte über <code>management.endpoints.web.path-mapping.health=healthcheck.&lt;id&gt;</code>, der Kontext-Pfad der Actuator-Endpunkte über <code>management.server.servlet.context-path</code>.</p>
-									
-									<h5>5.2.1, Seite 100</h5>
-									<p>Die Annotationen <code>@AutoConfigureBefore</code> und <code>@AutoConfigureAfter</code> setzen Ihre Autokonfiguration in Relation zu anderen und erlauben eine exakte Reihenfolge.</p>
+									<p>
+										Ganz besonderen Dank geht an Herrn Matthias S., der mit enormer Sorgfalt mein Buch gelesen hat und sich die Mühe gemacht, 
+										mir Seitenzahlen, Kapitel und Screenshots mit Korrekturen zu schicken.
+									</p>
 									
 									<h5>3.1.2, letzter Abschnitt</h5>
 									<p>
@@ -142,6 +127,67 @@
 											Spring-Infrastruktur abhängen. Fachliche Aspekte können somit als POJO implementiert werden und sind frei von Spring-Code. 
 										</blockquote>
 									</p>
+									
+									<h5>4.1.1, Seite 68</h5>
+									<p>Der Absatz bzgl. Default-Konfigurationsdateien ist unvollständig. Korrekt lautet er:</p>
+									<p><blockquote>
+									Der Basisname application der Konfigurationsdateien kann durch Setzen der Eigenschaft spring.config.name geändert werden. 
+									Der Aufruf des helloworld-Projektes mit <code>java -jar target/helloworld.jar --spring.config.name=foobar</code> ändert den 
+									Basisnamen der Konfigurationsdateien auf foobar, es wird nun nach foobar.properties, foobar.yml und profilspezifischen Varianten davon gesucht.
+									<br />
+									Mit <code>spring.config.location</code> kann der Suchpfad geändert und mittels <code>spring.config.additional-location</code> können 
+									zusätzliche Orte angegeben werden. Für beide Eigenschaften gilt: Enthalten sie Pfade, so wird innerhalb dieser Pfade nach 
+									Konfigurationsdateien entsprechend dem Standardnamen oder dem konfigurierten Namen gesucht, andernfalls nach Dateien wie angegeben. 
+									Profilspezifische Varianten werden nicht gesucht (siehe auch Unterabschnitt 4.2.1). Pfade innerhalb von <code>spring.config.additional-location</code>
+									 haben eine niedrigere Priorität, falls Eigenschaften mehrfach definiert sind.
+									</blockquote></p>
+									
+									<h5>5, Seite 96</h5>
+									<p>Kasten Beispielprojekt, Thymeleaf wird erst in Kapital 8 behandelt.</p>
+									
+									<h5>5.2, Seite 99</h5>
+									<p>Tippfehler, richig lautet es: "[…] findet dieser Import auch nur bei vollständig erfüllten Bedingungen statt."</p>
+									
+									<h5>5.2.1, Seite 100</h5>
+									<p>Die Annotationen <code>@AutoConfigureBefore</code> und <code>@AutoConfigureAfter</code> setzen Ihre Autokonfiguration in Relation zu anderen und erlauben eine exakte Reihenfolge.</p>
+
+									<h5>6, Seite 107</h5>
+									<p>Tippfehler, richtig lautet es "[…] und den Bedürfnissen moderner Anwendungen entspricht."</p>
+									
+									<h5>6.2.1, Seite 111</h5>
+									<p>Grammatikfehler, richtig lautet es "Spring Boot nutzt diesen Mechanismus, […]"</p>
+									
+									<h5>6.2.1, Seite 112</h5>
+									<p>Tippfehler, richtig lautet es "[…] und ein expliziter Dateiname konfiguriert wird."</p>
+									
+									<h5>8.1.2, Seite 132</h5>
+									<p>Es lautet natürlich <code>ResponseBody</code> statt <code>@ResponseBodoy</code></p>
+									
+									<h5>8.1.2, Seite 134</h5>
+									<p>
+										Der Satz "Sie können, wie in der zweiten index-Methode gezeigt, die Abbildung auch über die unterstützten Inhaltstypen einschränken" bezieht sich auf Listing 8-3 
+										auf der nachfolgenden Seite.
+									</p>
+									
+									<h5>8.1.5, Seite 146</h5>
+									<p>Grammatikfehler, richtig lautet es "[…] interessante Funktionen zur Verarbeitung statischer Ressourcen […]"</p>
+
+									<h5>8.1.8, Seite 153</h5>
+									<p>Überflüssiger Whitespace vor <code>@ApplicationScope</code></p>
+
+									<h5>9, Seite 167</h5>
+									<p>Tippfehler, richtig lautet es "[…] eine Kombination davon."</p>
+									
+									<h5>9.2.4, Seite 173</h5>
+									<ul>
+									<li>
+										<li>Korrekt lautet es "* @PostFilter dient dazu, Collections, die von […]"</li>
+										<li>Korrekt lautet es "* @PreFilter Für den seltenen Fall, dass Sie vor dem Aufruf der Methode Dinge filtern wollen."</li>
+										<li>Korrekt lautet es JSR-250 statt JSR 25</li>
+									</ul>
+																		
+									<h5>17.2.2, Seite 347</h5>
+									<p>Die Basis-URL der Endpunkte wird über <code>management.endpoints.web.base-path</code> konfiguriert, die Pfade einzelner Endpunkte über <code>management.endpoints.web.path-mapping.health=healthcheck.&lt;id&gt;</code>, der Kontext-Pfad der Actuator-Endpunkte über <code>management.server.servlet.context-path</code>.</p>
 								</div>
 							</section>
 						
