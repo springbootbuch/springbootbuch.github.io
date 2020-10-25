@@ -202,7 +202,6 @@
 
 									<h5>10.2.2, Seite 204</h5>
 									<ul>
-										<li>
 										<li>Richtig lautet es JSR-338 statt JSR 338</li>
 										<li>Tippfehler in der Auflistung der vier Varianten der Datenbankinitialisierungsspezifikationen, statt <b>drop-create</b> lautet es <b>create-drop</b>.</li>
 									</ul>
@@ -230,6 +229,48 @@
 
 									<h5>17.2.2, Seite 347</h5>
 									<p>Die Basis-URL der Endpunkte wird über <code>management.endpoints.web.base-path</code> konfiguriert, die Pfade einzelner Endpunkte über <code>management.endpoints.web.path-mapping.health=healthcheck.&lt;id&gt;</code>, der Kontext-Pfad der Actuator-Endpunkte über <code>management.server.servlet.context-path</code>.</p>
+									
+									<h5>14.2, Seite 273</h5>
+									<p>"Das WebFlux Modul ist sowohl in einem klassischen Servlet-Container als […]"</p>
+									
+									<h5>14.2.3, Seite 283</h5>
+									<p>"[…], welche Request-Methode auf welchem Pfad genutzt wurde […]"</p>
+									
+									
+									<h5>15.1, Seite 297</h5>
+									<p>Tippfehler, "Sprint-Test" statt "Spring-Test".</p>
+									
+									<h5>15.2, Seite 301</h5>
+									<p>Tippfehler, "Packet" statt "Paket"</p>
+									
+									<h5>15.3, Seite 313</h5>
+									<p>
+										"Webanwendungen können damit ebenso getestet wie Datenbanken und anderes mehr." 
+										Gemeint ist: "Die Webschicht kann damit ebenso in Isolation getestet werden wie die Serviceschicht oder die Persistenzschicht."
+										In Bezug auf die Schichten einer komplexen Anwendung gesehen ergeben sich Unit-Tests.
+										Technisch sind diese allerdings oftmals dann doch wieder Integrationstests, zum Beispiel gegen Spring-MVC oder halt eine Datenbank.
+										Vergleiche hierzu <a href="https://michael-simons.github.io/simple-meetup/ddd-und-tdd-mit-spring-boot-2_de">Domain- und Test-driven Development mit Spring Boot 2</a>.
+									</p>
+									
+									
+									<h5>15.3, Seite 317</h5>
+									<p>Satzzeichen (Punkt) vergessen: "[…] eine Instanz der Klasse <code>SomeService</code>. Das Besondere […]".</p>
+									
+									<h5>15.3, Seite 322</h5>
+									<p>
+										Listing 15.27 ist falsch. Der Inhalt des Service ist für den Text irrelevant, sollte aber dennoch gültiger Code sein:
+										<code>
+											@Service
+											public class SomeService {
+											}
+										</code>
+									</p>
+										
+									<h5>17.6, Seite 360</h5>
+									<p>Tippfehler, zuviele Whitespaces: "[…] unter dem Schlüssel <code>org.springframework.boot.actuate.autoconfigure.ManagementContextConfigurstion</code> aufgelistet werden;[…]"</p>
+
+									<h5>18.4.1, Seite 385</h5>
+									<p>Tippfehler, es muss "lesend und schreibend" statt "schreiben" lauten.</p>
 								</div>
 							</section>
 						
