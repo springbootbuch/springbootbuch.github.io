@@ -4,7 +4,7 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="de">
 	<head>
 		<title>Spring Boot - Moderne Softwareentwicklung im Spring Ökosystem</title>
 		<meta charset="utf-8" />
@@ -59,7 +59,7 @@
 
 									<p>Mit sogenannten "Startern" ist es möglich, die Konfiguration des Builds erheblich zu vereinfachen. Durch Deklaration einer einzigen Abhängigkeit wird zum Beispiel die Unterstützung einer Template-Sprache bereitgestellt, inklusive benötigter Abhängigkeiten und Konfiguration.</p>
 
-									<p>Spring Boot bietet herausragende Möglichkeiten, die technischen Schichten einer Anwendung, zum Bespiel Persistenz- und Webschicht, getrennt voneinander zu testen und die Ergebnisse dieser Tests anschließend zu Dokumentationszwecken zu nutzen. Ein nicht unerheblicher Gewinn, um sauberen Code zu schreiben.</p>
+									<p>Spring Boot bietet herausragende Möglichkeiten, die technischen Schichten einer Anwendung, zum Beispiel Persistenz- und Webschicht, getrennt voneinander zu testen und die Ergebnisse dieser Tests anschließend zu Dokumentationszwecken zu nutzen. Ein nicht unerheblicher Gewinn, um sauberen Code zu schreiben.</p>
 
 									<p>Darüber hinaus hat sich um Spring Boot, insbesondere durch die Firma Netflix, ein weiteres Ökosystem an Komponenten aufgetan, das insbesondere auf die Entwicklung verteilter, widerstandsfähiger ("resilient") Microservices zielt.</p>
 
@@ -108,13 +108,13 @@
 									<h4>Errata</h4>
 									
 									<p>
-										Ganz besonderen Dank geht an Herrn Matthias S., der mit enormer Sorgfalt mein Buch gelesen hat und sich die Mühe gemacht, 
-										mir Seitenzahlen, Kapitel und Screenshots mit Korrekturen zu schicken.
+										Ganz besonderen Dank geht an Herrn Matthias Streidel, der mit enormer Sorgfalt mein Buch gelesen hat und sich nicht nur die Mühe gemacht hat, 
+										mir Seitenzahlen, Kapitel und Screenshots mit Korrekturen zu schicken, sondern auch zu dieser Seite beigetragen hat.
 									</p>
 									
 									<h5>3.1.2, letzter Abschnitt</h5>
 									<p>
-										Hier hat sich ein inhaltlicher Dreher eingeschlichhen. Falls fachliche Komponenten wie Services-Klassen und ähnliches
+										Hier hat sich ein inhaltlicher Dreher eingeschlichen. Falls fachliche Komponenten wie Services-Klassen und ähnliches
 										frei von Spring-Code bleiben sollen, ist natürlich die Java-basierte Konfiguration sinnvoll. Schnittstellen, wie <code>@Controller</code>
 										und <code>@RestController</code> sind bereits so eng mit Spring-Infrastruktur verzahnt, dass sie getrost per Komponentensuche
 										in den Kontext kommen können. Hier bieten die großen IDEs auch hinreichend gute Unterstützung. Der korrigierte Text lautet:
@@ -146,7 +146,7 @@
 									<p>Kasten Beispielprojekt, Thymeleaf wird erst in Kapital 8 behandelt.</p>
 									
 									<h5>5.2, Seite 99</h5>
-									<p>Tippfehler, richig lautet es: "[…] findet dieser Import auch nur bei vollständig erfüllten Bedingungen statt."</p>
+									<p>Tippfehler, richtig lautet es: "[…] findet dieser Import auch nur bei vollständig erfüllten Bedingungen statt."</p>
 									
 									<h5>5.2.1, Seite 100</h5>
 									<p>Die Annotationen <code>@AutoConfigureBefore</code> und <code>@AutoConfigureAfter</code> setzen Ihre Autokonfiguration in Relation zu anderen und erlauben eine exakte Reihenfolge.</p>
@@ -180,14 +180,97 @@
 									
 									<h5>9.2.4, Seite 173</h5>
 									<ul>
-									<li>
-										<li>Korrekt lautet es "* @PostFilter dient dazu, Collections, die von […]"</li>
-										<li>Korrekt lautet es "* @PreFilter Für den seltenen Fall, dass Sie vor dem Aufruf der Methode Dinge filtern wollen."</li>
-										<li>Korrekt lautet es JSR-250 statt JSR 250</li>
+										<li>Richtig lautet es "* @PostFilter dient dazu, Collections, die von […]"</li>
+										<li>Richtig lautet es "* @PreFilter Für den seltenen Fall, dass Sie vor dem Aufruf der Methode Dinge filtern wollen."</li>
+										<li>Richtig lautet es JSR-250 statt JSR 250</li>
 									</ul>
-																		
+
+									<h5>9.3.9, Seite 188</h5>
+									<p>Tippfehler, richtig lautet es "OAuth bietet einige verschiedene Authentifizierungsabläufe an: <i>authentication flow, authorization code, implicit, resource owner password credentials</i> und <i>client credentials</i>."</p>
+
+									<h5>9.3.9, Seite 189</h5>
+									<p>
+										  Tippfehler in den GAV-Koordinaten, es wurde zweimal die Group-ID angegeben.
+											Tatsächlich hat sich aber im Spring-OAuth-Projekt einiges getan und auch die Version sollte angepasst werden:
+											Während im <a href="https://github.com/springbootbuch/security/blob/master/pom.xml">Beispiel-Projekt</a> meines Buches noch eine Snapshot-Abhängigkeit von <code>spring-security-oauth2-autoconfigure</code> genutzt wurde, so 
+											lauten die finalen Koordinaten für aktuelle Spring-Boot-Versionen:
+											<code>org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:2.3.4.RELEASE</code>.
+									</p>
+
+									<h5>9.4, Seite 196</h5>
+									<p>Tippfehler, richtig lautet es "[…] vielleicht lieber ein Logging-Framework schreiben."</p>
+
+									<h5>10.2.2, Seite 204</h5>
+									<ul>
+										<li>Richtig lautet es JSR-338 statt JSR 338</li>
+										<li>Tippfehler in der Auflistung der vier Varianten der Datenbankinitialisierungsspezifikationen, statt <b>drop-create</b> lautet es <b>create-drop</b>.</li>
+									</ul>
+
+									<h5>11, Seite 235</h5>
+									<ul>
+										<li>Richtig lautet es Autor statt Author</li>
+										<li>Richtig lautet es "[…] Reduzierung der Anzahl der Zugriffe […]"</li>
+									</ul>
+
+									<h5>11.2, Seite 237</h5>
+									<p>Richtig lautet es JSR-107 statt JSR 107</p>
+
+									<h5>12.1.3, Seite 251</h5>
+									<p>Tippfehler, richtig lautet es "Alternativ können Sie auch […]"</p>
+
+									<h5>13, Seite 254</h5>
+									<p>Tippfehler, das Wort 'aber' war gedoppelt, richtig lautet es: "Wesentliche Konfiguration des Konverters findet aber in den Zeilen […]"</p>
+
+									<h5>14, Seite 268</h5>
+									<ul>
+										<li>Tippfehler, richtig lautet es "Anwendungsszenarien in denen es […]"</li>
+										<li>Tippfehler, richtig lautet es "In diesen Fällen […]"</li>
+									</ul>
+
 									<h5>17.2.2, Seite 347</h5>
 									<p>Die Basis-URL der Endpunkte wird über <code>management.endpoints.web.base-path</code> konfiguriert, die Pfade einzelner Endpunkte über <code>management.endpoints.web.path-mapping.health=healthcheck.&lt;id&gt;</code>, der Kontext-Pfad der Actuator-Endpunkte über <code>management.server.servlet.context-path</code>.</p>
+									
+									<h5>14.2, Seite 273</h5>
+									<p>"Das WebFlux Modul ist sowohl in einem klassischen Servlet-Container als […]"</p>
+									
+									<h5>14.2.3, Seite 283</h5>
+									<p>"[…], welche Request-Methode auf welchem Pfad genutzt wurde […]"</p>
+									
+									
+									<h5>15.1, Seite 297</h5>
+									<p>Tippfehler, "Sprint-Test" statt "Spring-Test".</p>
+									
+									<h5>15.2, Seite 301</h5>
+									<p>Tippfehler, "Packet" statt "Paket"</p>
+									
+									<h5>15.3, Seite 313</h5>
+									<p>
+										"Webanwendungen können damit ebenso getestet wie Datenbanken und anderes mehr." 
+										Gemeint ist: "Die Webschicht kann damit ebenso in Isolation getestet werden wie die Serviceschicht oder die Persistenzschicht."
+										In Bezug auf die Schichten einer komplexen Anwendung gesehen ergeben sich Unit-Tests.
+										Technisch sind diese allerdings oftmals dann doch wieder Integrationstests, zum Beispiel gegen Spring-MVC oder halt eine Datenbank.
+										Vergleiche hierzu <a href="https://michael-simons.github.io/simple-meetup/ddd-und-tdd-mit-spring-boot-2_de">Domain- und Test-driven Development mit Spring Boot 2</a>.
+									</p>
+									
+									
+									<h5>15.3, Seite 317</h5>
+									<p>Satzzeichen (Punkt) vergessen: "[…] eine Instanz der Klasse <code>SomeService</code>. Das Besondere […]".</p>
+									
+									<h5>15.3, Seite 322</h5>
+									<p>
+										Listing 15.27 ist falsch. Der Inhalt des Service ist für den Text irrelevant, sollte aber dennoch gültiger Code sein:
+										<code>
+											@Service
+											public class SomeService {
+											}
+										</code>
+									</p>
+										
+									<h5>17.6, Seite 360</h5>
+									<p>Tippfehler, zuviele Whitespaces: "[…] unter dem Schlüssel <code>org.springframework.boot.actuate.autoconfigure.ManagementContextConfigurstion</code> aufgelistet werden;[…]"</p>
+
+									<h5>18.4.1, Seite 385</h5>
+									<p>Tippfehler, es muss "lesend und schreibend" statt "schreiben" lauten.</p>
 								</div>
 							</section>
 						
